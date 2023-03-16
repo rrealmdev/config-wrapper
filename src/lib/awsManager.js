@@ -2,7 +2,7 @@ const AWS = require('aws-sdk')
 
 let ssm
 
-const BASE_PATH = '/torc'
+const BASE_PATH = '/everyrealm'
 
 const cachedParams = {}
 

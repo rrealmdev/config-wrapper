@@ -7,7 +7,7 @@ const should = require('chai').should()
 
 const { envLoader, awsManager } = require('../src/index')
 const envFile = './tests/.env'
-
+// CWD-- needs mocks in here so that we're not doing live tests
 describe('envLoader', async () => {
   const params = [
     { key: 'key01', value: 'value01' },

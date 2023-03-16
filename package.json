@@ -1,10 +1,10 @@
 {
-  "name": "@opentorc/config-wrapper",
-  "version": "1.2.3",
+  "name": "@rrealmdev/config-wrapper",
+  "version": "1.2.4",
   "description": "config management wrapper",
   "main": "./src/index.js",
   "bin": {
-    "@opentorc/config-wrapper": "bin/config-wrapper",
+    "@rrealmdev/config-wrapper": "bin/config-wrapper",
     "config-wrapper": "bin/config-wrapper"
   },
   "scripts": {
@@ -28,6 +28,6 @@
     "node": ">=v16.3.0"
   },
   "publishConfig": {
-    "@opentorc:registry": "https://npm.pkg.github.com"
+    "@rrealmdev:registry": "https://npm.pkg.github.com"
   }
 }
