@@ -1,17 +1,22 @@
 {
-  "name": "@rrealmdev/config-wrapper",
+  "name": "com.everyrealm.config-wrapper",
   "version": "1.2.4",
   "description": "config management wrapper",
   "main": "./src/index.js",
+  "types": "dist/index.d.ts",
   "bin": {
     "@rrealmdev/config-wrapper": "bin/config-wrapper",
     "config-wrapper": "bin/config-wrapper"
   },
   "scripts": {
-    "test": "npx mocha ./tests/*.js  --timeout 60000"
+    "test": "npx mocha ./tests/*.js  --timeout 60000",
+    "build": "tsc"
   },
   "author": "cwd <cwd@lazybaer.com>",
-  "license": "ISC",
+  "files": [
+    "dist/**/*"
+  ],
+  "type": "commonjs",
   "dependencies": {
     "arg": "^5.0.1",
     "aws-sdk": "^2.1035.0",
@@ -27,7 +32,12 @@
   "engines": {
     "node": ">=v16.3.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rrealmdev/config-wrapper",
+    "directory": "com.everyrealm.config-wrapper"
+  },
   "publishConfig": {
-    "@rrealmdev:registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/@rrealmdev"
   }
 }
