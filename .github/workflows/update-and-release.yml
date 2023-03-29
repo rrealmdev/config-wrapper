@@ -14,7 +14,7 @@ jobs:
           node-version: '12.x'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@everyrealm' # Defaults to the user or organization that owns the workflow file
-      - run: npm i && tsc && npm publish
+      - run: npm i && npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # not a repository secret.  Automatically injected from Github Action
           # GH_PAT: ${{ secrets.GH_PAT }}
